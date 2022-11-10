@@ -14,7 +14,7 @@ const Navigation:React.FC<Container> = ({a}) => {
   return (
     <header className={`${styles.container} ${styles[a]}`}>
       <nav>
-        <ul>
+        <ul className={styles.ulList}>
             {
               links.map(({label, route}) => (
                 <li key={route}>

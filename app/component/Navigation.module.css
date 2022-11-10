@@ -1,7 +1,6 @@
 .container{
-    display: flex;
     background: #000;
-
+    width: 100vw;
 }
 
 .text{
@@ -10,4 +9,10 @@
 
 .vamo{
     height: 10vh;
+}
+
+.ulList{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
 }

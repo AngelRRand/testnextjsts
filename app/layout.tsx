@@ -1,6 +1,5 @@
 import Navigation from "./component/Navigation"
-import styles from './component/Navigation.module.css'
-
+import { AnimatePresence } from 'framer-motion';
 import "../styles/globals.css"
 export default function RootLayout({
   children,
@@ -13,10 +12,9 @@ export default function RootLayout({
         <title>My first app Next js</title>
       </head>
       <body>
-        <Navigation
-          a={'vamo'}
-        />
-        {children}
+          <Navigation a={'vamo'}/>
+          {children}
+
       </body>
     </html>
   )

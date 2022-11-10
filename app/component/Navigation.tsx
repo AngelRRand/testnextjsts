@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
-
+import { Container } from '../../interface/types'
+import styles from './Navigation.module.css'
 
 const links = [{
   label: 'Home',
@@ -9,23 +10,20 @@ const links = [{
   label: 'About',
   route: '/about'
 }]
-const Navigation = () => {
+const Navigation:React.FC<Container> = ({a}) => {
   return (
-    <header>
+    <header className={`${styles.container} ${styles[a]}`}>
       <nav>
-
         <ul>
-          <li>
             {
               links.map(({label, route}) => (
                 <li key={route}>
-                  <Link href={route}>
+                  <Link className={styles.text} href={route}>
                     {label}
                   </Link>
                 </li>
               ))
             }
-          </li>
         </ul>
 
       </nav>

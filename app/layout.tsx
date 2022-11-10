@@ -14,7 +14,6 @@ export default function RootLayout({
       <body>
           <Navigation a={'vamo'}/>
           {children}
-
       </body>
     </html>
   )

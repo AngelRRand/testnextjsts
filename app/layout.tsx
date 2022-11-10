@@ -1,3 +1,5 @@
+import Navigation from "./component/Navigation"
+
 export default function RootLayout({
   children,
 }: {
@@ -8,7 +10,10 @@ export default function RootLayout({
       <head>
         <title>My first app Next js</title>
       </head>
-      <body>{children}</body>
+      <body>
+        <Navigation/>
+        {children}
+      </body>
     </html>
   )
 }

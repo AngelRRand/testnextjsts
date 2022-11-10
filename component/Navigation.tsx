@@ -9,6 +9,9 @@ const links = [{
 },{
   label: 'About',
   route: '/about'
+},{
+  label: 'Post',
+  route: '/post'
 }]
 const Navigation:React.FC<Container> = ({a}) => {
   return (

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { Container } from '../../interface/types'
+import { Container } from '../interface/types'
 import styles from './Navigation.module.css'
 
 const links = [{

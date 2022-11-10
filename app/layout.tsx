@@ -1,4 +1,4 @@
-import Navigation from "./component/Navigation"
+import Navigation from "../component/Navigation"
 import { AnimatePresence } from 'framer-motion';
 import "../styles/globals.css"
 export default function RootLayout({

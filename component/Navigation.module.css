@@ -14,5 +14,11 @@
 .ulList{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 10vh;
     width: 100vw;
+    list-style: none;
+}
+.ulList li{
+    text-decoration: none;
 }
